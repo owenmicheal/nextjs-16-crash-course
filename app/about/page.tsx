@@ -2,9 +2,9 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <div>
+        <main>
             <h1>About</h1>
-        </div>
+        </main>
     )
 }
 export default Page
