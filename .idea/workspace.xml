@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="07409e78-edca-44cf-b9b0-123140a48944" name="Changes" comment="Initialising project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769060370241</updated>
       <workItem from="1769060371270" duration="12512000" />
-      <workItem from="1769267698390" duration="35360000" />
+      <workItem from="1769267698390" duration="36413000" />
     </task>
     <task id="LOCAL-00001" summary="Initialising project">
       <option name="closed" value="true" />
