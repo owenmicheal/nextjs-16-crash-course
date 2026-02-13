@@ -1,5 +1,5 @@
 import EventCard from "@/components/EventCard";
-import ExploreButton from "@/components/ExploreButton";
+import ExploreBtn from "@/components/ExploreBtn";
 import { IEvent } from "@/database";
 import { cacheLife } from "next/cache";
 
@@ -12,7 +12,7 @@ const Page = async () => {
   const { events } = await response.json();
 
   return (
-    <section className="mt-15">
+    <section>
       <h1 className="text-center">
         The Hub for Every Dev <br /> Event You Can`t Miss
       </h1>
@@ -20,7 +20,7 @@ const Page = async () => {
         Hackathons, Meetups, and Conferences, All in One Place
       </p>
 
-      <ExploreButton />
+      <ExploreBtn />
 
       <div className="mt-20 space-y-7">
         <h3>Featured Events</h3>
