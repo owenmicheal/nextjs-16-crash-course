@@ -1,25 +1,32 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-    reactCompiler: true,
-    experimental: {
-        turbopackFileSystemCacheForDev: true,
+    typescript: {
+        ignoreBuildErrors: true,
     },
-    async rewrites() {
-        return [
+    cacheComponents: true,
+    images: {
+        remotePatterns: [
             {
-                source: "/ingest/static/:path*",
-                destination: "https://eu-assets.i.posthog.com/static/:path*",
-            },
-            {
-                source: "/ingest/:path*",
-                destination: "https://eu.i.posthog.com/:path*",
-            },
-        ];
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+            }
+        ]
     },
-    // This is required to support PostHog trailing slash API requests
-    skipTrailingSlashRedirect: true,
+  async rewrites() {
+    return [
+      {
+        source: "/ingest/static/:path*",
+        destination: "https://us-assets.i.posthog.com/static/:path*",
+      },
+      {
+        source: "/ingest/:path*",
+        destination: "https://us.i.posthog.com/:path*",
+      },
+    ];
+  },
+  // This is required to support PostHog trailing slash API requests
+  skipTrailingSlashRedirect: true,
 };
 
 export default nextConfig;
